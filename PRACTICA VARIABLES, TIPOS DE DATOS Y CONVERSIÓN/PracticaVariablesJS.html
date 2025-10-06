@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Variables, tipos de datos y conversiones</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <script>
+    
+    // Declaración de variables
+        var numero = 5;
+        var cadena = "Ocho";
+        var booleano = true;
+        var nulo = null;
+        var indefinido = undefined;
+
+    // Mostrar los valores con alert
+       alert(numero);
+       alert(cadena);
+       alert(booleano);
+       alert(nulo);
+       alert(indefinido);
+        
+       //Tipos con typeof
+        console.log("Tipo de numero:" ,typeof numero);
+        console.log("Tipo de cadena:",typeof cadena);
+        console.log("Tipo de boolean:",typeof booleano);
+        console.log("Tipo de null:",typeof nulo);
+        console.log("Tipo de undefined:",typeof indefinido);
+
+        //Ejemplos de conversión de tipos
+
+        var texto = String(numero);
+        console.log("Conversion de numero a texto:",texto);
+        console.log(typeof texto);
+
+        var numeros = Number("123");
+        console.log("Conversion de cadena a numero:",numeros);
+        console.log(typeof numeros);
+        
+        var booleanos = Boolean(0);
+        console.log("Conversion de boolean :",booleanos);
+        console.log(typeof booleanos);
+
+        var booleanos1 = Boolean ("texto");
+        console.log("Conversion de boolean:",booleanos1);
+        console.log(typeof booleanos1);
+
+    </script>
+</body>
+</html>

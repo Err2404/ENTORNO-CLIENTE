@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi pagina</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <style>
+          h1 {
+            color:rgb(255, 30, 0);
+          }
+          body {
+            background-color: beige;
+        
+          }
+      </style>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        
+            <nav class="navbar bg-body-tertiary"data-bs-theme="dark">
+            <div class="container-fluid">
+            <span class="navbar-text">
+              Mi Página
+            </span>
+            </div>
+            </nav>
+            
+        <div class="container text-center p-5">
+        <h1>Mi Página Web</h1>
+        <p>Esta es mi primera página web con JavaScript, Html y Bootstrap</p>
+        <button type="submit" class="btn btn-success" onclick="mostrarMensaje1()">Guardar</button>
+        <button type="submit" class="btn btn-warning" onclick="mostrarMensaje2()">Ir atras</button>   
+        </div>
+        <div class="container">
+         <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">Mi tarjeta</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Mi primera tarjeta</h6>
+            <p class="card-text">Esta es mi primera tarjeta</p>
+            <a href="#" class="card-link">Tarjeta link</a>
+            <a href="#" class="card-link">Otro link</a>
+            </div>
+        </div>
+        </div>
+          <footer class="bg-dark text-light py-4 mt-auto text-center">
+          © 2025 Mi Página Web
+        </footer>
+        <script>
+            function mostrarMensaje1(){
+                alert("Has pulsado el boton guardar");
+                console.log("El boton guardar ha sido pulsado")
+            }
+            function mostrarMensaje2(){
+                alert("Has pulsado el boton Ir atras");
+                console.log("El boton ir atras ha sido pulsado")
+            }
+        </script>
+       
+           
+        </div>
+             
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+    
+</html>
