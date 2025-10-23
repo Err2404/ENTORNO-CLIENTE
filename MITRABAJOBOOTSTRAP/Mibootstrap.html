@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatyWeb - Empresa de Tecnología</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color:rgb(230, 7, 69)">CreatyWeb</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Mibootstrap.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Servicios.html">Servicios</a>
+        </li>
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Más
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse min-vh-100" style="margin-top: 56px;">
+                <div class="position-sticky pt-3">
+                    <h4 class="sidebar-heading text-light px-3 mt-4 mb-1" style="color:rgb(255, 255, 255)">Navegación</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="color:rgb(251, 7, 69)"><i class="fas fa-home me-2" style="color:rgb(230, 7, 69)"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 7, 69)"><i class="fas fa-chart-bar me-2 "></i>Análisis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(239, 7, 69)"><i class="fas fa-users me-2 "></i>Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 7, 69)"><i class="fas fa-cog me-2" style="color:rgb(239, 7, 69)"></i>Configuración</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+<!-- Main Content -->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"style="margin-top: 56px;">
+<!--Section Hero-->
+<section id="inicio" class="hero bg-dark text-white py-5 mb-5 rounded">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold" style="color:rgb(255, 7, 69)">Bienvenido a CreatyWeb</h1>
+    <p class="lead" style="color:rgb(255, 7, 69)">Soluciones tecnológicas innovadoras para tu empresa</p>
+    <button class="btn btn-lg me-2 bg-light" >Comenzar</button>
+    <button class="btn btn-outline-light btn-lg">Saber más</button>
+    </div>
+ </section>
+     <!-- Alert -->
+                <div class="alert alert-info alert-dismissible fade show bg-light" role="alert">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>¡Nueva actualización!</strong> Hemos lanzado nuestra nueva plataforma de servicios.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+    <!--Cards-->
+    <div class="row">
+  <div class="col-sm-4 mb-3 ">
+    <div class="card">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title " style="color:dodgerblue">Desarrollo Web</h5>
+        <p class="card-text">Creamos sitios web modernos y responsivos utilizando las últimas tecnologías.</p>
+        <a href="#" class="btn btn-outline-primary">Ver más</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mb-3 ">
+    <div class="card">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title" style="color:rgb(255, 220, 20)">Apps Móviles</h5>
+        <p class="card-text">Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android.</p>
+        <a href="#" class="btn btn-outline-warning">Ver más</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mb-3">
+    <div class="card">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title " style="color:green">Cloud Computing</h5>
+        <p class="card-text">Soluciones en la nube para mejorar la eficiencia y escalabilidad de tu negocio.</p>
+        <a href="#" class="btn btn-outline-success">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Badges and Buttons -->
+<section class="mb-5">
+  <h3>Tecnologías</h3>
+  <span class="badge bg-primary me-2 mb-2">JavaScript</span>
+  <span class="badge bg-success me-2 mb-2">Node.js</span>
+  <span class="badge bg-danger me-2 mb-2">Angular</span>
+  <span class="badge bg-warning me-2 mb-2">Python</span>
+  <span class="badge bg-info me-2 mb-2">React</span>
+  <span class="badge bg-secondary me-2 mb-2">Docker</span>
+</section>
+
+<!-- SECCIÓN ADICIONAL -->
+<div class="bg-light p-4 rounded mb-5">
+  <!-- Progress Bar -->
+  <div class="mb-4">
+    <h4 class="mb-3 text-danger">Progreso del Proyecto</h4>
+    <div class="progress">
+      <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%">
+        70%
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion mb-4" id="accordionExample">
+    <h4 class="mb-3 text-primary">Preguntas Frecuentes</h4>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          ¿Qué servicios ofrece CreatyWeb?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Ofrecemos desarrollo web, aplicaciones móviles, soluciones en la nube y más.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          ¿Cómo puedo contactarlos?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Puedes contactarnos desde el formulario en la sección de contacto o vía redes sociales.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Trigger -->
+  <div class="text-center mb-4">
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#contactoModal">
+      Abrir Formulario de Contacto
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactoModalLabel">Contáctanos</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div class="text-center mt-4">
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">Cargando...</span>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="myToast" data-bs-autohide="true" data-bs-delay="3000">
+  <div  class=" bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-danger text-white">
+      <strong class="me-auto text-dark"><i class="fas fa-bell text-dark"></i> Notificación</strong>
+      <small>Justo ahora</small>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      ¡Bienvenido a CreatyWeb! Explora nuestras soluciones tecnológicas.
+    </div>
+  </div>
+</div>
+
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-laptop-code me-2"></i>CreatyWeb</h5>
+                    <p class="text-muted">Innovación tecnológica para el futuro</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Contacto</a></li>
+                        <li><a href="servicios.html" class="text-light text-decoration-none">Política de privacidad</a></li>
+                        <li><a href="contacto.html" class="text-light text-decoration-none">Aviso legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Síguenos</h6>
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 CreatyWeb. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+      const toastE1 = document.getElementById('myToast');
+      const toast = new bootstrap.Toast(toastE1);
+
+      docuemnt.getElementById('showToastBtn').addEventListener('click', () => {
+        toast.show();
+      });
+     </script>
+</body>
+</html>

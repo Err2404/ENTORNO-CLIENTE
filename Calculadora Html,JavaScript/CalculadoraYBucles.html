@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora y bucles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: beige;
+      }
+      .botonesbucles button {
+        margin: 5px;
+      }
+      .botonesBadges button {
+        margin: 5px;
+      }
+      .resultado {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .inputs div {
+        margin: 0 10px;
+      }
+      .contenedor {
+        background-color: rgb(192, 192, 192);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        margin: auto;
+        align-items: center;
+      }
+      .resultado {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+<body>
+   <div class="contenedor text-center mt-5">
+   <h1 class="mb-4"> Calculadora y bucles</h1>
+   <hr>
+
+   <div class="inputs  justify-content-center mb-3">
+    <div>
+   <label for="num1">Número 1:</label>
+   <input type="number" id="num1" name="num1"><br><br>
+  </div>
+
+  <div>
+   <label for="num2">Número 2:</label>
+   <input type="number" id="num2" name="num2"><br><br>
+   </div>
+   
+   <div class="botonesbucles">
+    <h5 class="text-primary">Operaciones</h5>
+   <button onclick="sumar()" class="btn btn-primary">Sumar</button>
+   <button onclick="restar()" class="btn btn-primary">Restar</button>
+   <button onclick="multiplicar()" class="btn btn-primary">Multiplicar</button>
+   <button onclick="dividir()" class="btn btn-primary">Dividir</button>
+   <button onclick="potencia()" class="btn btn-primary"> Potencia</button>
+   <button onclick="resto()" class="btn btn-primary">Resto</button>
+
+  </div>
+
+  <div class="botonesBucles text-center mt-5">
+    <h5 class=" text-primary"> Bucles</h5>
+
+    <button onclick="bucleFor()" class="btn btn-success">For</button>
+    <button onclick="bucleWhile()" class="btn btn-success">While</button>
+    <button onclick="bucleDoWhile()" class="btn btn-success">DoWhile</button><br><br>
+    
+     </div>
+
+  <div class="botonesbadges text-center mt-5"></div>
+    <h5 class="text-primary">Operaciones con badges</h5>
+   <button onclick="bucleForBadges()" class="btn btn-warning">For (Badges)</button>
+   <button onclick="bucleWhileBadges()" class="btn btn-warning">While (Badges)</button>
+   <button onclick="bucleDoWhileBadges()" class="btn btn-warning">Do While (Badges)</button>
+  
+
+  </div>
+
+  <div class="resultado " style="background-color: white;">
+
+    <h5 class="text-primary">Resultado</h5>
+    <div id="resultado" class="resultado text-start">
+  </div>
+  </div>
+
+   <script>
+      
+      function sumar() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var resultado = num1 + num2;
+        document.getElementById("resultado").innerHTML = "El resultado de la suma es:" +  " " + resultado;
+          }
+
+      function restar() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2= parseFloat(document.getElementById("num2").value);
+        var resultado = num1 - num2;
+        document.getElementById("resultado").innerHTML = " El resultado de la resta es:" +  " " + resultado;   
+      }
+
+      function multiplicar() {
+        var num1 = parseFloat (document.getElementById("num1").value);
+        var num2 = parseFloat (document.getElementById("num2").value);
+        var resultado = num1 * num2;
+        document.getElementById("resultado").innerHTML = "El resultado de la multiplicación es:" + " " + resultado;
+      }
+
+      function dividir() {
+
+        var num1 = parseFloat (document.getElementById("num1").value);
+        var num2 = parseFloat (document.getElementById("num2").value);
+        var resultado = num1 / num2;
+        document.getElementById("resultado").innerHTML = "El resultado de la división es:" + " " + resultado;
+          }
+
+        function potencia() {
+
+            var num1 = parseFloat (document.getElementById ("num1").value);
+            var num2 = parseFloat (document.getElementById ("num2").value);
+            var resultado = num1 ** num2;
+            document.getElementById("resultado").innerHTML = "El resultado de la potencia es:" + " " + resultado;
+        }
+        function resto() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var resultado = num1 % num2;
+            document.getElementById("resultado").innerHTML = " El resultado del resto es:" +  " " + resultado;
+        }
+   </script>
+     
+    
+
+     <script>
+          
+          function bucleFor() {
+            var num1 = parseInt(document.getElementById("num1").value) || 0;
+            var resultado = "";
+            for (var i = 1; i <= num1; i++) {
+                resultado += " Repetición " + " " + i + "\n"; 
+                
+            }
+            document.getElementById("resultado").innerText = resultado;
+          }
+
+          function bucleWhile() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var resultado = " ";
+            var i = 1;
+            while (i <= num1)
+          {
+            resultado += "Repetición " + " " + i + "\n";
+            i++;
+          }
+          document.getElementById("resultado").innerText = resultado;
+          }
+
+          function bucleDoWhile() {
+            var num1 = parseInt(document.getElementById("num1").value)|| 0;
+            var resultado = " ";
+            var i = 1;
+            do {
+                resultado += "Repetición " + " " + i + "\n"  ;
+                i++;
+            } while (i <= num1);
+            document.getElementById("resultado").innerText = resultado;
+          }
+
+    </script>
+
+    <script>
+
+      function bucleForBadges() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var resultado = "";
+        for (var i = 1; i <= num1; i++) {
+            resultado += '<span class="badge bg-secondary m-1"> Repetición ' + i + '</span>';
+        }
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function bucleWhileBadges() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var resultado = "";
+        var i = 1;
+        while (i <= num1) {
+            resultado += '<span class="badge bg-secondary m-1"> Repetición ' + i + '</span>';
+            i++;
+        }
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function bucleDoWhileBadges() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var resultado = "";
+        var i = 1;
+        do {
+            resultado += '<span class="badge bg-secondary m-1"> Repetición ' + i + '</span>';
+            i++;
+        } while (i <= num1);
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
